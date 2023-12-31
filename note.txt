@@ -3,3 +3,5 @@
 
     + npx create-react-app
     + npm i react-bootstrap bootstrap react-icons : this is mainly for icons and UI library.
+    + npm i react-router-dom : this is for routing
+    + npm i react-router-bootstrap : This is to have client side link within NavLink
