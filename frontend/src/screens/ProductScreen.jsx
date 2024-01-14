@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   Row,
@@ -10,12 +11,26 @@ import {
   ListGroupItem,
 } from "react-bootstrap";
 import Rating from "../components/Rating";
-import products from "../products";
+import axios from 'axios';
+// import products from "../products";
+
 
 const ProductScreen = () => {
+  const [product, setProduct] = useState({});
+
+
   // id:productId : is renaming id to productId
   const { id: productId } = useParams();
-  const product = products.find((p) => p._id === productId); // this line means in products array, let pointer is p. Now iterate p._id untill it match productID
+  // const product = products.find((p) => p._id === productId); // this line means in products array, let pointer is p. Now iterate p._id untill it match productID
+  // we replace the line above with the line below when we have all our products at the server and we wanna fetch from it rather than read from a file here in frontend which later will be deleted
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const { data } = await axios.get(`/api/products/${productId}`);
+      setProduct(data);
+    }
+
+    fetchProduct();
+  }, [productId]);
   return (
     <>
       <Link className="btn btn-light my-3" to="/">

@@ -1,7 +1,4 @@
-// At first we used this for our frontend to read products but when we have our server, our frontend will just fetch data from our server instead. So, we can delete this but I just wanna keep it here, that is why I just comment it out.
-
-
-/*const products = [
+const products = [
   {
     _id: "1",
     name: "Airpods",
@@ -83,4 +80,3 @@
 ];
 
 export default products;
-*/

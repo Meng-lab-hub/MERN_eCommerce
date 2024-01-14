@@ -1,7 +1,19 @@
 
-- FrontEnd Recreation step/package/libraries:
+- FrontEnd step/package/libraries:
 
     + npx create-react-app
     + npm i react-bootstrap bootstrap react-icons : this is mainly for icons and UI library.
     + npm i react-router-dom : this is for routing
     + npm i react-router-bootstrap : This is to have client side link within NavLink
+
+
+- Backend step/package/libraries (install on root directory):
+    + npm i express : web framework using in the backend to create route
+    + install JSON formatter extension on chrome to easily format json text on chrome
+    + npm i -D nodemon concurrently : nodemon makes it automatic reload server without us restart server everytime we make changes. Concurrently allow both frontend and backend to run at the same time with one command?
+    + npm i -D dotenv : -D indicate that this is dept independence? and dotenv will allow us to have .env file which we will define all our environment variable there. On deployment we will set this on server?
+
+
+
+- Fetching data from frontend to server (install on frontend):
+    + npm i axios : we will use axios to fetch data instead of "fetch api".
