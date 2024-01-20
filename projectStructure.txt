@@ -1,0 +1,32 @@
+Mern_Ecommerce Project
+
+
+
++ node_modules: contain packages which is installed here (mainly these packages are for backend)
++ .env: a file contail environment variable
++ .gitignore: define which file will note be pushed to GITHUB
++ example.env: since we don't wanna push .env to GITHUB, we will ignore it but store its information here instead
++ package.json: define what packages are required (mostly for backend here), also a npm script is here too
+
+
+
+
++ Backend
+    - config: contain information and instruction to connect to database (MongoDB).
+    - models: contain information and defination of our database schema e.g. column name, type, etc.
+    - data: contain information of our products right now
+    - server.js: is an entry point for server side, open connection with database, handle request and send response to the frontend
+
+
++ frontend
+    - node_modules: contain all package necessary for this project. Obtain it by run "npm install" which install package defined at package.json
+    - package.json: define all required packages
+    - public: contain public file
+        > image: contain image of each products right now
+    - src: 
+        > assets: contain style and logo
+        > components: contain react components
+        > screens: define each frontend screen (web app page)
+        > App.js: define heading, footing and routing to each screen here?
+        > index.js: entry point of frontend, call App.js component here
+        > package.json: define necessary package used in frontend

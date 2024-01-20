@@ -2,9 +2,13 @@
 import express from "express";
 import dotenv from 'dotenv';
 dotenv.config();
+import connectDB from './config/db.js';
 import products from './data/products.js';
 // const port = 5000;  // variable port = 5000 which means our backend will run on port 5000 where our frontend is running on port 3000
 const port = process.env.PORT || 5000;  // here we use environment variable instead of hard coded number like 5000.
+
+connectDB();    // connect to our database which is MongoDB atlas
+
 const app = express();  // initialize express
 
 

@@ -15,5 +15,15 @@
 
 
 
-- Fetching data from frontend to server (install on frontend):
+- Fetching data from frontend to server to frontend(install on frontend):
     + npm i axios : we will use axios to fetch data instead of "fetch api".
+
+
+
+- Setting up database and its connection
+    + Create Database on MongoDB Atlas: this serve as a cloud database for us.
+    + Download and install MongoDB Compass : this is to visualize our data in database from atlas, we can visually see our data here while working on it
+
+    + npm i mongoose : this is like the tools/libraries to fetch data from database to our web app
+    + When connecting to database(MongoDB), I couldn't connect with +srv or Version "3.7 or later", I needed to change to NON STABLE version like "2.2.12 or later"
+
