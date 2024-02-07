@@ -12,6 +12,8 @@
     + install JSON formatter extension on chrome to easily format json text on chrome
     + npm i -D nodemon concurrently : nodemon makes it automatic reload server without us restart server everytime we make changes. Concurrently allow both frontend and backend to run at the same time with one command?
     + npm i -D dotenv : -D indicate that this is dept independence? and dotenv will allow us to have .env file which we will define all our environment variable there. On deployment we will set this on server?
+    + npm i bcryptjs : this is to enable the seed to create a password with high security
+    + npm i colors : optional packages to color your terminal output
 
 
 
@@ -27,3 +29,9 @@
     + npm i mongoose : this is like the tools/libraries to fetch data from database to our web app
     + When connecting to database(MongoDB), I couldn't connect with +srv or Version "3.7 or later", I needed to change to NON STABLE version like "2.2.12 or later"
 
+- Setting up postman
+    + create workspace
+    + create environment
+    + create API
+    + create Collection
+    + now try send request

@@ -14,8 +14,18 @@ Mern_Ecommerce Project
 + Backend
     - config: contain information and instruction to connect to database (MongoDB).
     - models: contain information and defination of our database schema e.g. column name, type, etc.
-    - data: contain information of our products right now
+    - data: contain data of products and users
+        > products.js: contain list of all products
+        > users.js: contain list of users
     - server.js: is an entry point for server side, open connection with database, handle request and send response to the frontend
+    - seeder.js: a script to run and import our data (users, products) from a file to MongoDB
+    - routes: contain all routing
+        > productRoutes.js: define all routings for products pages here.
+    - middleware:
+        > asyncHandler.js: not quite understand well. In routing, we also wanna do async and try, catch but we don't wanna do that every times, so we wrap this with asycHandler so we don't have to use try, catch. we will just handle error with express.
+        > errorMiddleware.js: define exception handling to handle error that is thrown collectly from an part of the project (for now used only at productRoutes).
+    - controllers: this is where a function definition is compare to C++. all routing function is defined here.
+        > productController.js: a file where all product related routing is defined.
 
 
 + frontend
